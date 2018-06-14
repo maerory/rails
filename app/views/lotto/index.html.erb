@@ -1,0 +1,9 @@
+<h1>Become a Millionaire!</h1>
+
+<p>이번주 추천 숫자는 <%= @new_number.numbers %> 입니다</p>
+<a href="/lotto/new">New Roll!</a>
+<ul>
+    <% @numbers.each do |num| %>
+        <li><%= num.numbers %> </li>
+    <% end %>
+</ul>
